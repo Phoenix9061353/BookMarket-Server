@@ -15,13 +15,13 @@ const app = express();
 /////////////////////////////////////////
 //Global middleware
 app.enable('trust proxy');
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+// app.use(cors());
 //script
 
-app.use(express.static(path.join(__dirname, 'client', 'build')));
+// app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 // app.use(
 //   helmet.contentSecurityPolicy({
